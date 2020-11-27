@@ -1,12 +1,12 @@
-import Planes.experimentalPlane;
-import models.ClassificationLevel;
-import models.ExperimentalTypes;
-import models.MilitaryType;
-import org.testng.Assert;
-import org.testng.annotations.Test;
 import Planes.MilitaryPlane;
 import Planes.PassengerPlane;
 import Planes.Plane;
+import Planes.experimentalPlane;
+import junit.framework.TestCase;
+import models.ClassificationLevel;
+import models.ExperimentalTypes;
+import models.MilitaryType;
+import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.List;
@@ -32,6 +32,7 @@ public class AirportTest {
     );
 
     private static PassengerPlane planeWithMaxPassengerCapacity = new PassengerPlane("Boeing-747", 980, 16100, 70500, 242);
+    private TestCase Assert;
 
     @Test
     public void testGetTransportMilitaryPlanes() {
