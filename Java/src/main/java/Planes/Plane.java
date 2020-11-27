@@ -28,8 +28,8 @@ abstract public class Plane {
     }
 
     public int getMinLoadCapacity() {
-        int result = this.maxLoadCapacity;
-        return result;
+        int maxLoadCapacity = this.maxLoadCapacity;
+        return maxLoadCapacity;
     }
 
     @Override
